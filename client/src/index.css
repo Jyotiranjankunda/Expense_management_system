@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #abbaab;
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  );
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #abbaab
+  );
+}
+
+.register-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.content {
+  min-height: 68vh;
+}
+
+.register {
+  /* border: 1px solid; */
+  height: max-content;
+  padding: 20px;
+  border-radius: 10px;
+  background: none;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.register img {
+  width: 350px;
+  margin-left: 20px;
+}
+
+.register-form {
+  width: 300px;
+  margin: 0 30px;
+}
+
+.login{
+  display: flex;
+  gap: 40px;
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.alreadyCompleted {
+  /* color: white; */
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* transaction page */
+.filters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+  margin: 1rem auto;
+}
+
+/* antd icons */
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icons {
+  color: black;
+}
+
+.inactive-icon {
+  color: gray;
+}
+
+.switch-icons {
+  border: 1px solid rgba(0, 0, 0, 0.677);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.toggleNavbar {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: all 0.2s ease;
+}
+
+.toggleNavbar:hover {
+  background-color: #0b5ed7;
+}
+
+.chart-card {
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .turnover {
+    margin: 10px auto;
+    width: 100% !important;
+  }
+
+  .charts {
+    margin: 10px auto;
+    width: 100% !important;
+  }
+
+  .antdTable {
+    max-width: 100%;
+  }
+
+  .register {
+    flex-direction: column;
+  }
+
+  .register img {
+    width: 300px;
+    margin-bottom: 20px;
+    /* border: 1px solid; */
+  }
+
+  .login{
+    padding-right: 0;
+    padding: 20px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .turnover {
+    flex-direction: column;
+  }
+
+  .turnover-card {
+    width: 100% !important;
+    margin: 10px auto;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .filters > div {
+    margin: 6px;
+  }
+
+  .register {
+    width: 90% !important;
+  }
+
+  .register img{
+    width: 90%;
+  }
+
+  .register-form{
+    width: 90%;
+  }
+}
