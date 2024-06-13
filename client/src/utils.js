@@ -1,1 +1,1 @@
-export const HOST_URL = "http://localhost:3000/api/v1";
+export const HOST_URL = "https://expense-management-system-6lxh.onrender.com/api/v1";
