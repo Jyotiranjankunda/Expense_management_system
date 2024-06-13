@@ -118,6 +118,14 @@
   margin: 10px auto;
 }
 
+.credit-row {
+  background-color: #d4edda !important;
+}
+
+.debit-row {
+  background-color: #f8d7da !important;
+}
+
 @media screen and (max-width: 768px) {
   .turnover {
     margin: 10px auto;

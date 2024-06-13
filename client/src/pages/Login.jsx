@@ -40,7 +40,7 @@ const Login = () => {
             <img src={bg} alt='expense management system' />
           </div>
           <Form layout='vertical' onFinish={submitHandler}>
-            <h1>Login Form</h1>
+            <h2>Login</h2>
             <Form.Item label='Email' name='email'>
               <Input type='email' />
             </Form.Item>

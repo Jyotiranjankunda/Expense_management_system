@@ -28,6 +28,7 @@ const HomePage = () => {
       title: 'Date',
       dataIndex: 'date',
       render: (text) => <span>{moment(text).format('DD-MM-YYYY')}</span>,
+      sorter: (a, b) => moment(b.date).diff(moment(a.date)),
     },
     {
       title: 'Amount (₹)',
@@ -215,6 +216,7 @@ const HomePage = () => {
             dataSource={allTransactions}
             scroll={{ x: 'max-content' }}
             pagination={{ pageSize: 10 }}
+            rowClassName={(record) => (record.type === 'Credit' ? 'credit-row' : 'debit-row')}
           />
         ) : (
           <Analytics allTransactions={allTransactions} />

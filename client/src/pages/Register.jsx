@@ -41,7 +41,7 @@ const Register = () => {
             <img src={bg} alt='expense management system' />
           </div>
           <Form layout='vertical' onFinish={submitHandler} className='register-form'>
-            <h1>Register Form</h1>
+            <h2>Register</h2>
             <Form.Item label='Name' name='name'>
               <Input />
             </Form.Item>
